@@ -15,9 +15,11 @@ echo "    (4) refactor:重构（既不新增也不修复bug）"
 echo "    (5) perf:提高性能"
 echo "    (6) test:测试相关更新"
 echo "    (7) chore:构建过程或辅助工具的变动"
+echo "    (8) cleanup:不影响代码逻辑的提交"
+echo "    (9) tracking:跟踪相关提交"
 echo ""
 
-typeArray=("feat" "fix" "docs" "style" "refactor" "perf" "test" "chore")
+typeArray=("feat" "fix" "docs" "style" "refactor" "perf" "test" "chore" "cleanup" "tracking")
 
 inputType(){
 
