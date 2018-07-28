@@ -65,7 +65,7 @@ inputSubject(){
 
 	if [[ ${#subject} -gt 0 && $(( ${#message} + ${#subject} )) -lt 100 ]]
 	then
-		message="${message}${subject}\n\n"
+		message="${message}${subject}"
 	else
 		echo "  [Error]没有描述或描述过长"
 		inputSubject
@@ -83,7 +83,7 @@ inputBody(){
 
 	if [[ ${#body} -gt 0 ]]
 	then
-		message="${message}${body}\n\n"
+		message="${message}\n\n${body}"
 	fi
 }
 
@@ -101,7 +101,7 @@ inputFooter(){
 
 	if [[ ${#footer} -gt 0 ]]
 	then
-		message="${message}${footer}\n\n"
+		message="${message}\n\n${footer}"
 	fi
 }
 
@@ -111,5 +111,6 @@ echo "  FOOTER:${footer}"
 #echo -e $message
 
 git commit -m $message
+git commit --amend
 
 

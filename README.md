@@ -1,1 +1,3 @@
 # GiyCommitFormatter
+
+	Format tool.
