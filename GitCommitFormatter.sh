@@ -65,7 +65,7 @@ inputSubject(){
 
 	if [[ ${#subject} -gt 0 && $(( ${#message} + ${#subject} )) -lt 100 ]]
 	then
-		message="${message}${subject}"
+		message="${message} ${subject}"
 	else
 		echo "  [Error]没有描述或描述过长"
 		inputSubject
@@ -108,7 +108,7 @@ inputFooter(){
 #inputFooter
 #echo "  FOOTER:${footer}"
 
-message="${message}\n#\n#Write body here....\n#\n#BREAKING CHANGES:\n#\n#Close"
+message="${message}\n#\n#Write body here....\n#\n#BREAKING CHANGE: \n#\n#Closes "
 
 text=$(echo -e "$message")
 
