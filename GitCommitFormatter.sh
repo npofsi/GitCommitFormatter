@@ -110,7 +110,7 @@ inputFooter(){
 
 message="${message}\n#\n#Write body here....\n#\n#BREAKING CHANGES:\n#\n#Close"
 
-text=$(printf $message)
+text=$(printf "$message")
 
 git commit -m "${text}"
 git commit --amend
