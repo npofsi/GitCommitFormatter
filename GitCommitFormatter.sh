@@ -4,7 +4,8 @@ message="";
 
 #2 > GitFormatError.txt
 
-echo "欢迎使用gitCommit格式化工具"
+echo ""
+echo "  欢迎使用gitCommit格式化工具"
 echo ""
 echo "    (0) feat:新功能（feature）"
 echo "    (1) fix :修补bug"
@@ -14,11 +15,9 @@ echo "    (4) refactor:重构（既不新增也不修复bug）"
 echo "    (5) perf:提高性能"
 echo "    (6) test:测试相关更新"
 echo "    (7) chore:构建过程或辅助工具的变动"
-
-typeArray=("feat" "fix" "docs" "style" "refactor" "perf" "test" "chore")
-
 echo ""
 
+typeArray=("feat" "fix" "docs" "style" "refactor" "perf" "test" "chore")
 
 inputType(){
 
@@ -89,7 +88,6 @@ inputBody(){
 
 #inputBody
 #echo "  BODY:${body}"
-
 
 inputFooter(){
 
