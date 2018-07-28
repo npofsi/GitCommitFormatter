@@ -110,7 +110,7 @@ echo "  FOOTER:${footer}"
 
 #echo -e $message
 
-git commit -m $message
+git commit -m "$message"
 git commit --amend
 
 
