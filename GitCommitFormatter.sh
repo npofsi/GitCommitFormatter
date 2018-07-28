@@ -87,8 +87,8 @@ inputBody(){
 	fi
 }
 
-inputBody
-echo "  BODY:${body}"
+#inputBody
+#echo "  BODY:${body}"
 
 
 inputFooter(){
@@ -105,10 +105,12 @@ inputFooter(){
 	fi
 }
 
-inputFooter
-echo "  FOOTER:${footer}"
+#inputFooter
+#echo "  FOOTER:${footer}"
 
-#echo -e $message
+message="${message}\n#\n#Write body here....\n#\n#BREAKING CHANGES:\n#\n#Close"
+
+echo -e $message
 
 git commit -m "$message"
 git commit --amend
