@@ -110,9 +110,9 @@ inputFooter(){
 
 message="${message}\n#\n#Write body here....\n#\n#BREAKING CHANGES:\n#\n#Close"
 
-echo -e $message
+text=$(echo -e $message)
 
-git commit -m "$message"
+git commit -m "${text}"
 git commit --amend
 
 
