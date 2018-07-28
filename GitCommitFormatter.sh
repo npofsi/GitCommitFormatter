@@ -113,6 +113,5 @@ message="${message}\n#\n#Write body here....\n#\n#BREAKING CHANGE: \n#\n#Closes 
 text=$(echo -e "$message")
 
 git commit -m "${text}"
+
 git commit --amend
-
-
