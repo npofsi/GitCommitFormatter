@@ -97,7 +97,7 @@ inputFooter(){
 	
 	footer=""
 
-	read -p "  输入commit(空):" footer
+	read -p "  输入commit尾部(空):" footer
 
 	if [[ ${#footer} -gt 0 ]]
 	then
