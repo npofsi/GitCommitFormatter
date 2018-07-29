@@ -10,7 +10,7 @@ body
 footer
 ```
 
-Use `./GitCommitFormatter` instead `git commit -m "message"`
+Use `./GitCommitFormatter.sh` instead `git commit -m "message"`
 
 You can choose commit type:
 
