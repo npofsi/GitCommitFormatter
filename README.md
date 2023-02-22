@@ -5,12 +5,10 @@ Format to:
 ```
 type(scope): subject
 
-body
-
-footer
+filelist
 ```
 
-Use `./GitCommitFormatter` instead `git commit -m "message"`
+Use `./committer.sh` instead `git commit -m "message"`
 
 You can choose commit type:
 
