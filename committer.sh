@@ -108,8 +108,8 @@ genModifiedFileList(){
 	fi
 }
 
-genModifiedFileList
-echo "  DIFF:${diff}"
+# genModifiedFileList
+# echo "  DIFF:${diff}"
 
 message="${message}"
 
