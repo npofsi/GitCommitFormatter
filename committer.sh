@@ -94,8 +94,8 @@ inputBody(){
 	fi
 }
 
-#inputBody
-#echo "  BODY:${body}"
+inputBody
+echo "  BODY:${body}"
 
 genModifiedFileList(){
 	
